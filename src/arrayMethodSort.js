@@ -12,10 +12,10 @@ function applyCustomSort() {
             ? compareFunction(this[j], this[j + 1]) > 0
             : String(this[j]) > String(this[j + 1])
         ) {
-          const number1 = this[j];
+          const tempValue = this[j];
 
           this[j] = this[j + 1];
-          this[j + 1] = number1;
+          this[j + 1] = tempValue;
         }
       }
     }
